@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="javascript/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$('.images').cycle({ 
+    fx:     'scrollHorz', 
+    next:   '.rbutton', 
+    prev:   '.lbutton' 
+});
+</script>
+<style type="text/css">
+
+*{
+	margin:0px;
+	padding:0px;
+	}
+.social {
+	background-image: url(images/trans_black_bg.png);
+	height: 23px;    
+}
+#google{
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding-top: 2px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+#fb{
+	float: left;
+	height: 20px;
+	width: 20px;
+	
+	padding-right: 1px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+#header {
+}
+#google:hover {
+	background-color: #EA5C48;
+}
+#fb:hover {
+	background-color: #0066FF;
+}
+#twitter {
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding-top:2px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#twitter:hover {
+	background-color: #0CF;
+}
+
+#search{
+	float: right;
+	height: 20px;
+	width: 20px;
+	padding-top: 2px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 3px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	margin-right: 30%;
+	}
+#search:hover {
+	background-color: #21a0ca;
+}
+#text{
+	float: right;
+	height:20px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	color: #FFF;
+	-webkit-transition: all .5s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	-ms-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+#text:hover {
+	background-color: #FFFFFF;
+	color: #2dabd4;
+}
+
+.menu{
+	width: 100%;
+	background-color: #333;
+	height: 50px;
+	color: #FFF;
+}
+
+.menu ul{
+	float: left;
+	list-style-type: none;
+	}
+	
+.menu ul li{
+	float: left;
+	margin-left: 45px;
+}
+
+.menu-item{
+	display: inline-block;
+	height: 30px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+}
+
+.menu-item:hover{
+	background-color:#272727;
+	border-bottom-color:#2DABD4;
+	
+}
+
+.asideLeft{
+	float: left;
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right:1px;
+	width: 65%;
+	height:300px;
+}
+
+.lbutton{
+	background-image: url(images/lbutton.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 55px;
+	height: 300px;
+	float: left;
+	background-color: #333;
+}
+.rbutton{
+	background-image: url(images/rbutton.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+	width: 55px;
+	float: right;
+	background-color: #333;
+}
+
+.images{
+	float: left;
+	overflow: hidden;
+	height: 300px;
+	width: 544px;
+}
+	
+.sectionRight{
+	float: right;
+	width: 34.6%;
+	background-image:url(images/img1.jpg);
+	height:150px;
+	margin-right: 1px;
+	
+}	
+
+.secRight1{
+	float: right;
+	width: 17.3%;
+	background-image:url(images/img2.jpg);
+	height:150px;
+	margin-right: 1px;
+	margin-top:1px;
+	}
+.secRight2{
+	float: right;
+	width: 17.3%;
+	background-image:url(images/slider3.jpg);
+	height:150px;
+	margin-right: 1px;
+	margin-top:1px;
+	}	
+
+
+	
+.righttext{
+	color:#FFF;
+	background-color: #333;
+	opacity: 0;
+	width:53%;
+	height: 50px;
+	margin-top: 5%;
+	margin-left: 15%;
+	}
+	
+.text1{
+	color:#FFF;
+	background-color:#333;
+	opacity:0;
+	width:55%;
+	height: 100px;
+	margin-top:2%;
+	margin-left:15%;
+	}
+
+
+.sectionRight:hover .righttext{
+    opacity:0.6;
+	text-align:center;
+	font-size:15px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:700;
+	padding:30px;
+	color:#FFF;
+
+}
+
+.secRight1:hover .text1{
+    opacity:0.6;
+	text-align:center;
+	font-size:13px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:700;
+	padding:10px;
+	color:#FFF;
+
+}
+
+.secRight2:hover .text1{
+    opacity:0.6;
+	text-align:center;
+	font-size:13px;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:700;
+	padding:20px;
+	color:#FFF;
+
+}
+.bar{
+	background-color: #FFFFE8;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	text-align: center;
+	clear: both;
+	margin-top: 33%;
+	font-weight: 700;
+	color: #21A0CA;
+}
+
+.imagebar{
+	margin-top: 4%;
+	margin-right: auto;
+	margin-left: 6%;
+}
+
+.logo{
+	background-image: url(images/logo_bg.png);
+	height: 220px;
+}
+
+	
+
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<div class="logo">
+<div class="social">
+  <div id="google"><img src="images/trans_google.png" width="20" height="17" alt="google" /></div>
+  <div id="fb"><img src="images/trans_fb.png" alt="facebook" name="fb" width="20" height="20" /></div>
+  <div id="twitter"><img src="images/trans_twitter.png" width="20" height="18" alt="twitter" /></div>
+ 
+  <div id="text">GOODNESS PARTNERS</div>
+  <div id="search"><img src="images/trans_search.png" width="20" height="20" alt="search" /></div>
+ </div>
+<div style=" text-align:center"><img src="images/tli_logo.png" width="290" height="211" alt="The Logical Indian" /></div>
+</div>
+</div>
+
+<div class="menu">
+<ul>
+   <li><a href="#" class="menu-item">HOME</a></li>
+  <li><a href="#" class="menu-item">NEWS</a></li>
+  <li><a href="#" class="menu-item">STORY FEED</a></li>
+  <li><a href="#" class="menu-item">EFFORTS</a></li>
+  <li><a href="#" class="menu-item">MY STORY</a></li>
+  <li><a href="#" class="menu-item">CONTACT US</a></li>
+</ul>
+</div>
+
+<div class="asideLeft">
+<div class="lbutton"></div>
+<div class="images">
+  <img src="images/slider2.jpg" width="544" height="300" /> 
+  <img src="images/img3.jpg" width="544" height="300" /> 
+  <img src="images/slider1.jpg" width="544" height="300" /> 
+  </div>
+<div class="rbutton"></div>
+</div>
+
+<div class="sectionRight">
+<div class="righttext">
+Brazil High Court Bans Corporate Donations To Political Parties, Election Campaigns
+</div>
+</div>
+
+<div class="secRight1">
+<div class="text1">
+Magsaysay Awardee Sanjiv Chaturvedi Donates Award Money For The Poor Patients at AIIMS
+</div>
+</div>
+
+<div class="secRight2">
+<div class="text1">
+Nepal's New Non-Discrimination LGBT Laws Leave Even India and The West Behind.
+</div>
+</div>
+
+<p class="bar">
+JOIN THE TLI COMMUNITY
+</p>
+
+<div class="imagebar">
+<table width="200" cellspacing="15px">
+  <tr>
+    <td><a href="#"><img src="images/fb.jpg" width="130" height="104" alt="fb" /></a></td>
+    <td><a href="#"><img src="images/twitter.jpg" width="130" height="104" /></a></td>
+    <td><a href="#"><img src="images/google+.jpg" width="130" height="104" /></a></td>
+    <td><a href="#"><img src="images/posts.jpg" width="130" height="104" /></a></td>
+    <td><a href="#"><img src="images/youtube.jpg" width="130" height="104" /></a></td>
+    <td><a href="#"><img src="images/instagram.jpg" width="130" height="104" /></a></td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+</html>
